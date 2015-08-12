@@ -1,0 +1,10 @@
+<form action="/add_album" method="post">
+  <label for="album">Add a new album here:</label>
+  <input type="text" name="album">
+  <button name="button" type="submit" class="btn btn-success">Add</button>
+</form>
+<ul>
+  <% @org.cds.each do |cd| %>
+  <li><%= cd %></li>
+  <% end %>
+</ul>
